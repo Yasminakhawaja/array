@@ -31,7 +31,7 @@ a {
 
 .produktliste {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row: span 5;
   gap: 1rem;
 }
@@ -77,10 +77,18 @@ h1 {
 }
 .tilbudlabel {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 1rem;
-  background-color: pink;
+  top: 10px;
+  left: 10px;
+  display: inline block;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.tilbudlabel p {
+  background-color: yellow;
 }
 #backbutton:hover {
   background: #111;
