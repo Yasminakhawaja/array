@@ -36,6 +36,7 @@ a {
   gap: 1rem;
 }
 article {
+  position: relative;
   display: grid;
   grid-template-columns: subgrid;
   grid-row: span 5;
@@ -73,6 +74,13 @@ h1 {
   filter: grayscale(1.5);
   opacity: 0.5;
   pointer-events: none;
+}
+.tilbudlabel {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: yellow;
 }
 #backbutton:hover {
   background: #111;
