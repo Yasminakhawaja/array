@@ -22,9 +22,12 @@ function visData(json) {
           <img src="https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp" alt="produktbillede" />
           <h2>${produkt.productdisplayname}</h2>
           <h3>${produkt.brandname}</h3>
-          ${product.discount ? "<p class=`tildbudlabel`>tilbud<p/>" : `<p> Før kr.${produkt.price} NU ${produkt.discount},-<p/>``<p>kr. ${produkt.price},-<(p>`}
-             
-          <p>${produkt.price}</p>
+          ${
+            produkt.discount
+              ? `<p class="tildbudlabel">${produkt.discount}%</p>
+               <p> Før kr.${produkt.price} NU ${tildbudpris},-<p/>`
+              : `<p>kr. ${produkt.price},-</p>`
+          }
           <p>${produkt.gender}</p>
           <p>${produkt.subcategory}</p>
         </article>
