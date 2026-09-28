@@ -6,13 +6,14 @@ fetch(endpoint)
 
 function visData(json) {
   console.log(json);
-  json.forEach((element) => {
+  json.forEach((produkt) => {
     produktliste.innerHTML += `<article class="card">
-  <img src=https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp alt="produktbillede"/>
-  <h2>${element.productdisplayname}</h2>
-  <h3>${element.gender}</h3>
-  <p>${element.pris}</p>
-  <p>${element.brandname}</p>
+    <a href=produktdetails.html?id=${produkt.id} class{ Produkt.soldout ? "udsolgt : ""}>
+  <img src=https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp alt="produktbillede"/>
+  <h2>${produkt.productdisplayname}</h2>
+  <h3>${produkt.gender}</h3>
+  <p>${produkt.pris}</p>
+  <p>${produkt.brandname}</p>
   </article>`;
   });
 }
