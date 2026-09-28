@@ -1,0 +1,32 @@
+#backbutton {
+  margin: 2rem 0 1.5rem 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  background: #fff;
+  border: 1.5px solid #111;
+  border-radius: 999px;
+}
+
+#backbutton:hover {
+  background: #111;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
