@@ -1,21 +1,21 @@
 body {
-  background-color: rgb(254, 247, 255);
+  background-color: rgb(60, 158, 223);
   min-height: 100vh;
 }
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 5rem;
 }
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 5rem;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(255, 255, 255);
   position: sticky;
   top: 100vh;
 }
@@ -40,7 +40,7 @@ article {
   display: grid;
   grid-template-columns: subgrid;
   grid-row: span 5;
-  background-color: rgb(216, 191, 191);
+  background-color: rgb(255, 255, 255);
   padding: 5rem;
   border-color: black;
   margin-left: 1.5rem;
@@ -62,7 +62,7 @@ header {
 }
 
 h1 {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 80px;
   text-align: center;
   margin: 0;
@@ -80,7 +80,7 @@ h1 {
   top: 1rem;
   right: 1rem;
   padding: 1rem;
-  background-color: yellow;
+  background-color: pink;
 }
 #backbutton:hover {
   background: #111;
